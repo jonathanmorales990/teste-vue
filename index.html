@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript" src="js/cadastro.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+	</head>
+	<body>
+		<div id="app">
+			<label for="campo" class="titulo">Cadastro de interesses</label>
+			<input class="campo" type="text" v-model="nome" placeholder="Nome"/>
+			<input class="campo" type="text" v-model="telefone" placeholder="Telefone"/>
+			<input class="campo" type="text" v-model="email" placeholder="E-mail"/>
+			<button class="adicionar" v-on:click="adicionar">Adicionar</button>
+			<label for="interessados" class="titulo">Interessados</label>
+			<ul class="cadastros-titulo">
+				<li>Nome</li>
+				<li>Telefone</li>
+				<li>E-mail</li>
+				<li>Ação</li>
+			</ul>
+			<ul class="cadastros" v-for="(cadastro, index) in cadastros">
+				<li>{{ cadastro.nome }}</li>
+				<li>{{ cadastro.telefone }}</li>
+				<li>{{ cadastro.email }}</li>
+				<li><button v-on:click="remover(index)">Remover</button></li>
+			</ul>
+		</div>
+	</body>
+</html>

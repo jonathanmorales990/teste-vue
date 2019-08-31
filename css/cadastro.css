@@ -1,0 +1,55 @@
+#app {
+	font-family: sans-serif;
+}
+.campo {
+	width: 300px;
+	display: block;
+	margin-top: 10px;
+}
+.titulo {
+	font-weight: bold;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+button.adicionar {
+	margin-top: 10px;
+}
+.cadastros-titulo {
+	background-color: #cccccc;
+}
+ul {
+	width: 650px;
+	border: #a5a5a5 solid 1px;
+	padding: 1px 1px 1px 20px;
+	margin: 0;
+	list-style-type: none;
+	display: table;
+	table-layout: fixed;
+	box-sizing: border-box;
+}
+ul.cadastros {
+	border-top: 0;
+}
+ul.cadastros:hover {
+	background-color: #edf5ff;
+}
+li {
+	display: table-cell;
+}
+ul.cadastros-titulo li:nth-child(1), 
+ul.cadastros li:nth-child(1) {
+	width: 20%;
+}
+ul.cadastros-titulo li:nth-child(2), 
+ul.cadastros li:nth-child(2) {
+	width: 25%;
+}
+ul.cadastros-titulo li:nth-child(3), 
+ul.cadastros li:nth-child(3) {
+	width: 30%;
+}
+ul.cadastros-titulo li:nth-child(4), 
+ul.cadastros li:nth-child(4) {
+	width: 25%;
+}
